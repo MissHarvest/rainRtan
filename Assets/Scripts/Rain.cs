@@ -6,14 +6,15 @@ public class Rain : MonoBehaviour
 {
     float size = 1.0f;
     int score = 0;
-    enum EType { Small, Normal, Large };
+    enum EType { Small, Normal, Large, Danger, Max };
     EType type = EType.Small;
     SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        type = (EType)Random.Range(0, 3);
+        type = (EType)Random.Range(0, (int)EType.Max);
         transform.position = new Vector3(Random.Range(-2.0f, 2.0f), 4.3f, 0);
 
         switch (type)
@@ -33,14 +34,13 @@ public class Rain : MonoBehaviour
                 score = 3;
                 spriteRenderer.color = Color.green;
                 break;
+            case EType.Danger:
+                size = 0.8f;
+                score = -5;
+                spriteRenderer.color = Color.red;
+                break;
         }
         transform.localScale = new Vector3(size, size, 0);        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

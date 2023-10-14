@@ -675,7 +675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 60.00
+  m_Text: 0.00
 --- !u!222 &868920620
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -879,6 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee93869ad26ecb47806ab8aab9c5ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!95 &1224460674
 Animator:
   serializedVersion: 5
@@ -1450,7 +1451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: U Die, Re?
+  m_Text: Retry?
 --- !u!222 &1953932382
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class Rtan : MonoBehaviour
 {
     // Start is called before the first frame update
     SpriteRenderer spriteRenderer;
-    float speed = 1.0f;
+    public float speed = 5.0f;
     Vector3 velocity = Vector3.zero;
 
     void Start()

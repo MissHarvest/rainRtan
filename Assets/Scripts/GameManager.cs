@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     int totalScore = 0;
-    float timeLimit = 60.0f;
+    float timeLimit = 30.0f;
     public Text scoreText;
     public Text timeText;
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     void InitGame()
     {
         totalScore = 0;
-        timeLimit = 5.0f;
+        timeLimit = 30.0f;
         Time.timeScale = 1.0f;
     }
 
